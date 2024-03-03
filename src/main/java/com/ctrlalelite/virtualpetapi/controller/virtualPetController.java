@@ -45,4 +45,10 @@ public class virtualPetController {
         return this.userServ.updateUser(id, updatedUser);
     }
 
+    
+    @DeleteMapping("/delete/{id}")
+    public void removeUser(@PathVariable long id) {
+        this.userServ.deleteUser(id);
+    }
+
 }
