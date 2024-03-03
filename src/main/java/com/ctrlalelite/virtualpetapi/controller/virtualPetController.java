@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.wcci.apisample.entity.User;
-import com.wcci.apisample.service.UserService;
+import com.ctrlalelite.virtualpetapi.entity.;
+import com.ctrlalelite.virtualpetapi.service.;
 
 @RestController
-public class UserController {
+public class virtualPetController {
 
     @Autowired
     UserService userServ;
