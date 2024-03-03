@@ -1,4 +1,4 @@
-package com.ctrlalelite.virtualpetapi.controller;
+package com.ctrlaltelite.virtualpetapi.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ctrlalelite.virtualpetapi.entity.;
-import com.ctrlalelite.virtualpetapi.service.;
+import com.ctrlaltelite.virtualpetapi.entity.;
+import com.ctrlaltelite.virtualpetapi.service.;
 
 @RestController
 public class virtualPetController {
