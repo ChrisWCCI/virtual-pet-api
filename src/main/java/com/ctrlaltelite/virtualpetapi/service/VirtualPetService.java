@@ -11,50 +11,45 @@ import org.springframework.web.server.ResponseStatusException;
 public class VirtualPetService {
 
     @Autowired
-    private UserRepository userRepo;
+    private VirtualPetRepository virtualPetRepo;
 
     /*
      * Adds a new User to the repository (db). The "C" (create) in CRUD
      */
-    public void createUser(User u) {
-        this.userRepo.save(u);
+    public void createVirtualPet(VirtualPet virtulPetNew) {
+        this.virtualPetRepo.save(virtualPetNew);
     }
 
     /*
      * Gets all the users in the repo (db). The "R" (read) in CRUD
      */
-    public List<User> getAllUsers() {
-        return this.userRepo.findAll();
+    public List<VirtualPet> getAllVirtualPets() {
+        return this.virtualPetRepo.findAll();
     }
 
     /*
      * Gets a specific User by its id. The "R" (read) in CRUD
      */
-    public User getUserById(long id) {
-        return this.userRepo.findById(id)
+    public VirtualPet getVirtualPetById(long id) {
+        return this.virtualPetRepo.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found: " + id));
     }
 
     /*
      * Updates an existing user, found by a specific id. The "U" (update) in CRUD
      */
-    public User updateUser(long id, User updatedUser) {
-        User existingUser = this.userRepo.findById(id)
+    public VirutalPet updateVirtualPet(long id, VirtualPet updatedVirtualPet) {
+        VirtualPet existingVirtualPet = this.virtualPetRepo.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found: " + id));
 
         // The other way of updating
-        existingUser.setName(updatedUser.getName());
-        existingUser.setEmail(updatedUser.getEmail());
-        this.userRepo.save(existingUser);
+        existingVirtualPet.setName(updatedVirtualPet.getName());
+        existingVirtualPet.setEmail(updatedVirtualPet.getEmail());
+        this.VirtualPetRepo.save(existingVirtualPet);
 
-        return existingUser;
+        return existingVirtualPet;
     }
 
-    /*
-     * Delete a user from the repo. The "D" (delete) in CRUD
-     */
-    public void deleteUser(long id) {
-        this.userRepo.deleteById(id);
     }
-}
+
 
