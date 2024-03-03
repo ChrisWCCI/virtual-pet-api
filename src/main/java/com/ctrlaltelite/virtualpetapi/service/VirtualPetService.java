@@ -5,10 +5,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.server.ResponseStatusException;
 
-@Service
+import com.ctrlaltelite.virtualpetapi.entity.VirtualPet;
 
+@Service
 public class VirtualPetService {
 
     @Autowired
@@ -49,6 +52,10 @@ public class VirtualPetService {
         this.VirtualPetRepo.save(existingVirtualPet);
 
         return existingVirtualPet;
+    }
+
+    public void deleteUser(long id) {
+        this.virtualPetRepo.deleteById(id);
     }
 
 }
