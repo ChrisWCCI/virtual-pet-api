@@ -17,12 +17,10 @@ import com.ctrlaltelite.virtualpetapi.entity.VirtualPet;
 import com.ctrlaltelite.virtualpetapi.service.VirtualPetService;
 
 @RestController
-@RequestMapping("/pet")
-
 public class VirtualPetController {
 
     @Autowired
-    private VirtualPet virtualPet;
+    VirtualPetService virtualPetServ;
 
     @GetMapping("/ping")
     public String pingPong() {
@@ -31,27 +29,27 @@ public class VirtualPetController {
 
     @PostMapping("/new")
     public void addUser(@RequestBody VirtualPet virtualPet) {
-        this.virtualPet.createUser(virtualPet);
+        this.virtualPetServ.createVirtualPet(virtualPet);
     }
 
     @GetMapping("/users")
-    public List<VirtualPet> findAllUsers() {
-        return this.virtualPet.getAllUsers();
+    public List<VirtualPet> findAllVirtualPets() {
+        return this.virtualPetServ.getAllVirtualPets();
     }
 
     @GetMapping("/user/{id}")
-    public VirtualPet findUserById(@PathVariable long id) {
-        return this.virtualPet.getUserById(id);
+    public VirtualPet findVirtualPetById(@PathVariable long id) {
+        return this.virtualPetServ.getVirtualPetById(id);
     }
 
     @PutMapping("/user/{id}")
-    public VirtualPet modifyUser(@PathVariable long id, @RequestBody VirtualPet updatedUser) {
-        return this.virtualPet.updateUser(id, updatedUser);
+    public VirtualPet modifyUser(@PathVariable long id, @RequestBody VirtualPet updatedVirtualPet) {
+        return this.virtualPetServ.updateVirtualPet(id, updatedVirtualPet);
     }
 
     @DeleteMapping("/delete/{id}")
-    public void removeUser(@PathVariable long id) {
-        this.virtualPet.deleteUser(id);
+    public void removeVirtualPet(@PathVariable long id) {
+        this.virtualPetServ.deleteVirtualPet(id);
     }
 
 }
