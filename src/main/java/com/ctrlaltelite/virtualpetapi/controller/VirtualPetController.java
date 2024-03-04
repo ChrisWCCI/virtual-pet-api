@@ -11,17 +11,19 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.ctrlaltelite.virtualpetapi.entity.VirtualPet;
 import com.ctrlaltelite.virtualpetapi.service.VirtualPetService;
 
 @RestController
+@RequestMapping("/api/pets")
+
 public class VirtualPetController {
 
     @Autowired
-    VirtualPetService virtualPetServ;
+    private VirtualPetService virtualPetServ;
 
+    // used as a way to make sure mapping is working
     @GetMapping("/ping")
     public String pingPong() {
         return "pong";
@@ -32,12 +34,14 @@ public class VirtualPetController {
         this.virtualPetServ.createVirtualPet(virtualPet);
     }
 
-    @GetMapping("/users")
+    // this allows us to get all pets
+    @GetMapping
     public List<VirtualPet> findAllVirtualPets() {
         return this.virtualPetServ.getAllVirtualPets();
     }
 
-    @GetMapping("/user/{id}")
+    // this allows us to find a pet by it Id
+    @GetMapping("/{id}")
     public VirtualPet findVirtualPetById(@PathVariable long id) {
         return this.virtualPetServ.getVirtualPetById(id);
     }
@@ -47,7 +51,8 @@ public class VirtualPetController {
         return this.virtualPetServ.updateVirtualPet(id, updatedVirtualPet);
     }
 
-    @DeleteMapping("/delete/{id}")
+    // this allows us to delete a pet based on its ID
+    @DeleteMapping("/{id}")
     public void removeVirtualPet(@PathVariable long id) {
         this.virtualPetServ.deleteVirtualPet(id);
     }

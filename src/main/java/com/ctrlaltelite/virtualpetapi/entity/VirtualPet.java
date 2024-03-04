@@ -1,5 +1,7 @@
 package com.ctrlaltelite.virtualpetapi.entity;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +14,7 @@ import jakarta.persistence.Table;
 
 public class VirtualPet {
 
-    public VirtualPet(String petName, String petDescription, long hungerLevel, long thirstLevel, long boredomLevel) {
+    public VirtualPet(Long petID, String petName, String petDescription, long hungerLevel, long thirstLevel, long boredomLevel, List<VirtualPet> virtualPets) {
         this.petName = petName;
         this.petDescription = petDescription;
         this.hungerLevel = hungerLevel;
