@@ -1,7 +1,6 @@
 package com.ctrlaltelite.virtualpetapi.entity;
 
 import java.util.List;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,7 +13,8 @@ import jakarta.persistence.Table;
 
 public class VirtualPet {
 
-    public VirtualPet(Long petID, String petName, String petDescription, long hungerLevel, long thirstLevel, long boredomLevel, List<VirtualPet> virtualPets) {
+    public VirtualPet(Long petID, String petName, String petDescription, long hungerLevel, long thirstLevel,
+            long boredomLevel, List<VirtualPet> virtualPets) {
         this.petName = petName;
         this.petDescription = petDescription;
         this.hungerLevel = hungerLevel;
@@ -22,8 +22,37 @@ public class VirtualPet {
         this.boredomLevel = boredomLevel;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+
+    @Column(name = "petId")
+    private long id;
+
+    @Column(name = "petName")
+    private String petName;
+
+    @Column(name = "petDescription")
+    private String petDescription;
+
+    @Column(name = "hungerLevel")
+    private long hungerLevel;
+
+    @Column(name = "thirstLevel")
+    private long thirstLevel;
+
+    @Column(name = "boredomLevel")
+    private long boredomLevel;
+
     public VirtualPet() {
 
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getPetName() {
@@ -65,33 +94,5 @@ public class VirtualPet {
     public void setBoredomLevel(long boredomLevel) {
         this.boredomLevel = boredomLevel;
     }
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "petId")
-    private long id;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    @Column(name = "petName")
-    private String petName;
-
-    @Column(name = "petDescription")
-    private String petDescription;
-
-    @Column(name = "hungerLevel")
-    private long hungerLevel;
-
-    @Column(name = "thirstLevel")
-    private long thirstLevel;
-
-    @Column(name = "boredomLevel")
-    private long boredomLevel;
 
 }
