@@ -46,7 +46,6 @@ public class VirtualPetService {
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pet not found: " + id));
 
         //  Updating Pet Profile
-        existingVirtualPet.setId(updatedVirtualPet.getId());
         existingVirtualPet.setPetName(updatedVirtualPet.getPetName());
         existingVirtualPet.setPetDescription(updatedVirtualPet.getPetDescription());
         existingVirtualPet.setHungerLevel(updatedVirtualPet.getHungerLevel());
