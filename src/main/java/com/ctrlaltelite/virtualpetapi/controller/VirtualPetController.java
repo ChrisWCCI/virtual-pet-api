@@ -56,5 +56,4 @@ public class VirtualPetController {
     public void removeVirtualPet(@PathVariable long id) {
         this.virtualPetServ.deleteVirtualPet(id);
     }
-
 }

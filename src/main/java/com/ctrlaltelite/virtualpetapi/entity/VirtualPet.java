@@ -44,7 +44,6 @@ public class VirtualPet {
     private long boredomLevel;
 
     public VirtualPet() {
-
     }
 
     public long getId() {
@@ -94,5 +93,4 @@ public class VirtualPet {
     public void setBoredomLevel(long boredomLevel) {
         this.boredomLevel = boredomLevel;
     }
-
 }
