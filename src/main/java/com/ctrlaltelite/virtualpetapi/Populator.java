@@ -38,7 +38,5 @@ public class Populator implements CommandLineRunner {
                                 "She is Muffin in disguise but makes an excellent Grouchy Granny.", 50, 50, 50,
                                 virtualPets);
                 virtualPetRepository.save(virtualPets5);
-
         }
-
 }

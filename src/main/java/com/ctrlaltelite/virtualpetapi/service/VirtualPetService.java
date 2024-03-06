@@ -37,7 +37,7 @@ public class VirtualPetService {
      */
     public VirtualPet getVirtualPetById(long id) {
         return this.virtualPetRepo.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found: " + id));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pet not found: " + id));
     }
 
     /*
@@ -45,7 +45,7 @@ public class VirtualPetService {
      */
     public VirtualPet updateVirtualPet(long id, VirtualPet updatedVirtualPet) {
         VirtualPet existingVirtualPet = this.virtualPetRepo.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found: " + id));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pet not found: " + id));
 
         // The other way of updating
         existingVirtualPet.setId(updatedVirtualPet.getId());
@@ -55,12 +55,10 @@ public class VirtualPetService {
         existingVirtualPet.setThirstLevel(updatedVirtualPet.getThirstLevel());
         existingVirtualPet.setBoredomLevel(updatedVirtualPet.getBoredomLevel());
         this.virtualPetRepo.save(existingVirtualPet);
-
         return existingVirtualPet;
     }
 
     public void deleteVirtualPet(long id) {
         this.virtualPetRepo.deleteById(id);
     }
-
 }

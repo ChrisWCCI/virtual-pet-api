@@ -9,5 +9,4 @@ public class VirtualpetapiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(VirtualpetapiApplication.class, args);
 	}
-
 }
