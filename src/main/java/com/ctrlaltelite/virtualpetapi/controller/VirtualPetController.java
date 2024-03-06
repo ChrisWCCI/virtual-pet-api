@@ -35,7 +35,7 @@ public class VirtualPetController {
     }
 
     // this allows us to get all pets
-    @GetMapping
+    @GetMapping("/all")
     public List<VirtualPet> findAllVirtualPets() {
         return this.virtualPetServ.getAllVirtualPets();
     }
@@ -46,7 +46,7 @@ public class VirtualPetController {
         return this.virtualPetServ.getVirtualPetById(id);
     }
 
-    @PutMapping("/user/{id}")
+    @PutMapping("/{id}")
     public VirtualPet modifyUser(@PathVariable long id, @RequestBody VirtualPet updatedVirtualPet) {
         return this.virtualPetServ.updateVirtualPet(id, updatedVirtualPet);
     }
