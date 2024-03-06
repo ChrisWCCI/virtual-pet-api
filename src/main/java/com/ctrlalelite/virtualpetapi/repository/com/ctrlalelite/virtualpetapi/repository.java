@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 //import com.ctrlalelite.virtualpetapi.entity.Repository;
 
-@Repository
+//@Repository
 //public interface virtualpetapiRepository extends JpaRepository<Review, Long> {
 
 
