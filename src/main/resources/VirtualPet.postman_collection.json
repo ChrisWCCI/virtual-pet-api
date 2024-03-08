@@ -1,796 +1,946 @@
 {
-  "info": {
-    "_postman_id": "8c1c3db5-8163-4157-8a6f-7446c17fa555",
-    "name": "VirtualPet",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "33335760"
-  },
-  "item": [
-    {
-      "name": "localhost:8080/api/pets/1",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/pets/1",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "1"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/1",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/1",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "1"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 06 Mar 2024 02:32:10 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"id\": 1,\n    \"petName\": \"Bandit Heeler\",\n    \"petDescription\": \"A middle aged blue heeler who loves his family. A Rad Dad!\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/2",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/pets/2",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "2"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/2",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/2",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "2"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 06 Mar 2024 02:11:21 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"id\": 2,\n    \"petName\": \"Chili Heeler\",\n    \"petDescription\": \"Wife to Bandit and Mother of Bingo and Bluey. An awesome Mum!\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/3",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/pets/3",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "3"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/3",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/3",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "3"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 06 Mar 2024 02:36:44 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"id\": 3,\n    \"petName\": \"Bluey Heeler\",\n    \"petDescription\": \"She is a great big sister and the star of the show.\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/4",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/pets/4",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "4"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/4",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/4",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "4"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 06 Mar 2024 02:38:05 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"id\": 4,\n    \"petName\": \"Bingo Heeler\",\n    \"petDescription\": \"She is the baby of the family but still an important part.\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/5",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/pets/5",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "5"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/5",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/5",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "5"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 06 Mar 2024 02:41:18 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"id\": 5,\n    \"petName\": \"Grouchy Granny\",\n    \"petDescription\": \"She is Muffin in disguise but makes an excellent Grouchy Granny.\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
-        },
-        {
-          "name": "localhost:8080/api/pets/5",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/5",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "5"]
-            }
-          },
-          "status": "Not Found",
-          "code": 404,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Fri, 08 Mar 2024 01:53:24 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"timestamp\": \"2024-03-08T01:53:24.161+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"trace\": \"org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND \\\"Pet not found: 5\\\"\\r\\n\\tat com.ctrlaltelite.virtualpetapi.service.VirtualPetService.lambda$getVirtualPetById$0(VirtualPetService.java:38)\\r\\n\\tat java.base/java.util.Optional.orElseThrow(Optional.java:403)\\r\\n\\tat com.ctrlaltelite.virtualpetapi.service.VirtualPetService.getVirtualPetById(VirtualPetService.java:38)\\r\\n\\tat com.ctrlaltelite.virtualpetapi.controller.VirtualPetController.findVirtualPetById(VirtualPetController.java:46)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:842)\\r\\n\",\n    \"message\": \"Pet not found: 5\",\n    \"path\": \"/api/pets/5\"\n}"
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/6",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/pets/6",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "6"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/6",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/6",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "6"]
-            }
-          },
-          "status": "Not Found",
-          "code": 404,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 06 Mar 2024 02:42:48 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"timestamp\": \"2024-03-06T02:42:48.944+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"trace\": \"org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND \\\"Pet not found: 6\\\"\\r\\n\\tat com.ctrlaltelite.virtualpetapi.service.VirtualPetService.lambda$getVirtualPetById$0(VirtualPetService.java:40)\\r\\n\\tat java.base/java.util.Optional.orElseThrow(Optional.java:403)\\r\\n\\tat com.ctrlaltelite.virtualpetapi.service.VirtualPetService.getVirtualPetById(VirtualPetService.java:40)\\r\\n\\tat com.ctrlaltelite.virtualpetapi.controller.VirtualPetController.findVirtualPetById(VirtualPetController.java:46)\\r\\n\\tat jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:840)\\r\\n\",\n    \"message\": \"Pet not found: 6\",\n    \"path\": \"/api/pets/6\"\n}"
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/new",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "exec": [
-              "\"Bingo\",\"She is the baby of the family but still an important part.\", 50, 50, 50\r",
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/pets/all",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "all"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/all",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/all",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "all"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 06 Mar 2024 02:54:16 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "[\n    {\n        \"id\": 1,\n        \"petName\": \"Bandit Heeler\",\n        \"petDescription\": \"A middle aged blue heeler who loves his family. A Rad Dad!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 2,\n        \"petName\": \"Chili Heeler\",\n        \"petDescription\": \"Wife to Bandit and Mother of Bingo and Bluey. An awesome Mum!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 3,\n        \"petName\": \"Bluey Heeler\",\n        \"petDescription\": \"She is a great big sister and the star of the show.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 4,\n        \"petName\": \"Bingo Heeler\",\n        \"petDescription\": \"She is the baby of the family but still an important part.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 5,\n        \"petName\": \"Grouchy Granny\",\n        \"petDescription\": \"She is Muffin in disguise but makes an excellent Grouchy Granny.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    }\n]"
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/all",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/pets/all",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "all"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/all",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/all",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "all"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Fri, 08 Mar 2024 01:03:46 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "[\n    {\n        \"id\": 1,\n        \"petName\": \"Bandit Heeler\",\n        \"petDescription\": \"A middle aged blue heeler who loves his family. A Rad Dad!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 2,\n        \"petName\": \"Chili Heeler\",\n        \"petDescription\": \"Wife to Bandit and Mother of Bingo and Bluey. An awesome Mum!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 3,\n        \"petName\": \"Bluey Heeler\",\n        \"petDescription\": \"She is a great big sister and the star of the show.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 4,\n        \"petName\": \"Bingo Heeler\",\n        \"petDescription\": \"She is the baby of the family but still an important part.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 5,\n        \"petName\": \"Grouchy Granny\",\n        \"petDescription\": \"She is Muffin in disguise but makes an excellent Grouchy Granny.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    }\n]"
-        },
-        {
-          "name": "localhost:8080/api/pets/all",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "localhost:8080/api/pets/all",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "all"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Fri, 08 Mar 2024 01:35:43 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "[\n    {\n        \"id\": 1,\n        \"petName\": \"Bandit Heeler\",\n        \"petDescription\": \"A middle aged blue heeler who loves his family. A Rad Dad!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 2,\n        \"petName\": \"Chili Heeler\",\n        \"petDescription\": \"Wife to Bandit and Mother of Bingo and Bluey. An awesome Mum!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 3,\n        \"petName\": \"Bluey Heeler\",\n        \"petDescription\": \"She is a great big sister and the star of the show.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 4,\n        \"petName\": \"Bingo Heeler\",\n        \"petDescription\": \"She is the baby of the family but still an important part.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    }\n]"
-        },
-        {
-          "name": "localhost:8080/api/pets/all",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/all",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "all"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Fri, 08 Mar 2024 01:46:39 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "[\n    {\n        \"id\": 1,\n        \"petName\": \"Charlie\",\n        \"petDescription\": \"Black Dragon\",\n        \"hungerLevel\": 100,\n        \"thirstLevel\": 85,\n        \"boredomLevel\": 75\n    },\n    {\n        \"id\": 2,\n        \"petName\": \"Chili Heeler\",\n        \"petDescription\": \"Wife to Bandit and Mother of Bingo and Bluey. An awesome Mum!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 3,\n        \"petName\": \"Bluey Heeler\",\n        \"petDescription\": \"She is a great big sister and the star of the show.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 4,\n        \"petName\": \"Bingo Heeler\",\n        \"petDescription\": \"She is the baby of the family but still an important part.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 6,\n        \"petName\": \"yo itsmee\",\n        \"petDescription\": \"Most Rad dog\",\n        \"hungerLevel\": 75,\n        \"thirstLevel\": 85,\n        \"boredomLevel\": 65\n    },\n    {\n        \"id\": 7,\n        \"petName\": \"yo itsmee\",\n        \"petDescription\": \"Most Rad dog\",\n        \"hungerLevel\": 75,\n        \"thirstLevel\": 85,\n        \"boredomLevel\": 65\n    }\n]"
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/5",
-      "request": {
-        "method": "DELETE",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/pets/5",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "5"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/5",
-          "originalRequest": {
-            "method": "DELETE",
-            "header": [],
-            "url": {
-              "raw": "localhost:8080/api/pets/5",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "5"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "plain",
-          "header": [
-            {
-              "key": "Content-Length",
-              "value": "0"
-            },
-            {
-              "key": "Date",
-              "value": "Fri, 08 Mar 2024 01:33:18 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": null
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/new",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "exec": [
-              "\"Bingo\",\"She is the baby of the family but still an important part.\", 50, 50, 50\r",
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"petName\": \"yo itsmee\", \"petDescription\": \"Most Rad dog\", \"hungerLevel\": \"75\", \"thirstLevel\": \"85\", \"boredomLevel\": \"65\"}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "localhost:8080/api/pets/new",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "new"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/new",
-          "originalRequest": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\"petName\": \"Krypto Graham\", \"petDescription\": \"Most Rad dog\", \"hungerLever\": \"75\", \"thirstLevel\": \"85\", \"boredomLevel\": \"65\"}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "localhost:8080/api/pets/new",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "new"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "plain",
-          "header": [
-            {
-              "key": "Content-Length",
-              "value": "0"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 06 Mar 2024 18:35:32 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": null
-        }
-      ]
-    },
-    {
-      "name": "localhost:8080/api/pets/1",
-      "request": {
-        "method": "PUT",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"petName\": \"Charlie\", \"petDescription\": \"Black Dragon\", \"hungerLevel\": \"100\", \"thirstLevel\": \"85\", \"boredomLevel\": \"75\"}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "localhost:8080/api/pets/1",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "pets", "1"]
-        }
-      },
-      "response": [
-        {
-          "name": "localhost:8080/api/pets/1",
-          "originalRequest": {
-            "method": "PUT",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\"petName\": \"Charlie\", \"petDescription\": \"Black Dragon\", \"hungerLevel\": \"100\", \"thirstLevel\": \"85\", \"boredomLevel\": \"75\"}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "localhost:8080/api/pets/1",
-              "host": ["localhost"],
-              "port": "8080",
-              "path": ["api", "pets", "1"]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Date",
-              "value": "Fri, 08 Mar 2024 01:45:57 GMT"
-            },
-            {
-              "key": "Keep-Alive",
-              "value": "timeout=60"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"id\": 1,\n    \"petName\": \"Charlie\",\n    \"petDescription\": \"Black Dragon\",\n    \"hungerLevel\": 100,\n    \"thirstLevel\": 85,\n    \"boredomLevel\": 75\n}"
-        }
-      ]
-    }
-  ]
+	"info": {
+		"_postman_id": "8c1c3db5-8163-4157-8a6f-7446c17fa555",
+		"name": "VirtualPet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33335760"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/pets/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pets/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 02:32:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"petName\": \"Bandit Heeler\",\n    \"petDescription\": \"A middle aged blue heeler who loves his family. A Rad Dad!\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/pets/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pets/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 02:11:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"petName\": \"Chili Heeler\",\n    \"petDescription\": \"Wife to Bandit and Mother of Bingo and Bluey. An awesome Mum!\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/pets/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pets/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 02:36:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"petName\": \"Bluey Heeler\",\n    \"petDescription\": \"She is a great big sister and the star of the show.\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/pets/4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pets/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 02:38:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"petName\": \"Bingo Heeler\",\n    \"petDescription\": \"She is the baby of the family but still an important part.\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/pets/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pets/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 02:41:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"petName\": \"Grouchy Granny\",\n    \"petDescription\": \"She is Muffin in disguise but makes an excellent Grouchy Granny.\",\n    \"hungerLevel\": 50,\n    \"thirstLevel\": 50,\n    \"boredomLevel\": 50\n}"
+				},
+				{
+					"name": "localhost:8080/api/pets/5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"5"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2024 01:53:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2024-03-08T01:53:24.161+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"trace\": \"org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND \\\"Pet not found: 5\\\"\\r\\n\\tat com.ctrlaltelite.virtualpetapi.service.VirtualPetService.lambda$getVirtualPetById$0(VirtualPetService.java:38)\\r\\n\\tat java.base/java.util.Optional.orElseThrow(Optional.java:403)\\r\\n\\tat com.ctrlaltelite.virtualpetapi.service.VirtualPetService.getVirtualPetById(VirtualPetService.java:38)\\r\\n\\tat com.ctrlaltelite.virtualpetapi.controller.VirtualPetController.findVirtualPetById(VirtualPetController.java:46)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:842)\\r\\n\",\n    \"message\": \"Pet not found: 5\",\n    \"path\": \"/api/pets/5\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/pets/6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pets/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/6",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"6"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 02:42:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2024-03-06T02:42:48.944+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"trace\": \"org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND \\\"Pet not found: 6\\\"\\r\\n\\tat com.ctrlaltelite.virtualpetapi.service.VirtualPetService.lambda$getVirtualPetById$0(VirtualPetService.java:40)\\r\\n\\tat java.base/java.util.Optional.orElseThrow(Optional.java:403)\\r\\n\\tat com.ctrlaltelite.virtualpetapi.service.VirtualPetService.getVirtualPetById(VirtualPetService.java:40)\\r\\n\\tat com.ctrlaltelite.virtualpetapi.controller.VirtualPetController.findVirtualPetById(VirtualPetController.java:46)\\r\\n\\tat jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:840)\\r\\n\",\n    \"message\": \"Pet not found: 6\",\n    \"path\": \"/api/pets/6\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/pets/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pets/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2024 01:03:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"petName\": \"Bandit Heeler\",\n        \"petDescription\": \"A middle aged blue heeler who loves his family. A Rad Dad!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 2,\n        \"petName\": \"Chili Heeler\",\n        \"petDescription\": \"Wife to Bandit and Mother of Bingo and Bluey. An awesome Mum!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 3,\n        \"petName\": \"Bluey Heeler\",\n        \"petDescription\": \"She is a great big sister and the star of the show.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 4,\n        \"petName\": \"Bingo Heeler\",\n        \"petDescription\": \"She is the baby of the family but still an important part.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 5,\n        \"petName\": \"Grouchy Granny\",\n        \"petDescription\": \"She is Muffin in disguise but makes an excellent Grouchy Granny.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    }\n]"
+				},
+				{
+					"name": "localhost:8080/api/pets/all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/pets/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2024 01:35:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"petName\": \"Bandit Heeler\",\n        \"petDescription\": \"A middle aged blue heeler who loves his family. A Rad Dad!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 2,\n        \"petName\": \"Chili Heeler\",\n        \"petDescription\": \"Wife to Bandit and Mother of Bingo and Bluey. An awesome Mum!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 3,\n        \"petName\": \"Bluey Heeler\",\n        \"petDescription\": \"She is a great big sister and the star of the show.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 4,\n        \"petName\": \"Bingo Heeler\",\n        \"petDescription\": \"She is the baby of the family but still an important part.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    }\n]"
+				},
+				{
+					"name": "localhost:8080/api/pets/all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2024 01:46:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"petName\": \"Charlie\",\n        \"petDescription\": \"Black Dragon\",\n        \"hungerLevel\": 100,\n        \"thirstLevel\": 85,\n        \"boredomLevel\": 75\n    },\n    {\n        \"id\": 2,\n        \"petName\": \"Chili Heeler\",\n        \"petDescription\": \"Wife to Bandit and Mother of Bingo and Bluey. An awesome Mum!\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 3,\n        \"petName\": \"Bluey Heeler\",\n        \"petDescription\": \"She is a great big sister and the star of the show.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 4,\n        \"petName\": \"Bingo Heeler\",\n        \"petDescription\": \"She is the baby of the family but still an important part.\",\n        \"hungerLevel\": 50,\n        \"thirstLevel\": 50,\n        \"boredomLevel\": 50\n    },\n    {\n        \"id\": 6,\n        \"petName\": \"yo itsmee\",\n        \"petDescription\": \"Most Rad dog\",\n        \"hungerLevel\": 75,\n        \"thirstLevel\": 85,\n        \"boredomLevel\": 65\n    },\n    {\n        \"id\": 7,\n        \"petName\": \"yo itsmee\",\n        \"petDescription\": \"Most Rad dog\",\n        \"hungerLevel\": 75,\n        \"thirstLevel\": 85,\n        \"boredomLevel\": 65\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/pets/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pets/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/5",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pets/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2024 01:33:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/pets/new",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"\"Bingo\",\"She is the baby of the family but still an important part.\", 50, 50, 50\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"petName\": \"yo itsmee\", \"petDescription\": \"Most Rad dog\", \"hungerLevel\": \"75\", \"thirstLevel\": \"85\", \"boredomLevel\": \"65\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/pets/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"new"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/new",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"petName\": \"Krypto Graham\", \"petDescription\": \"Most Rad dog\", \"hungerLever\": \"75\", \"thirstLevel\": \"85\", \"boredomLevel\": \"65\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/pets/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"new"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 18:35:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/pets/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"petName\": \"Charlie\", \"petDescription\": \"Black Dragon\", \"hungerLevel\": \"100\", \"thirstLevel\": \"85\", \"boredomLevel\": \"75\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/pets/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pets",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/pets/1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"petName\": \"Charlie\", \"petDescription\": \"Black Dragon\", \"hungerLevel\": \"100\", \"thirstLevel\": \"85\", \"boredomLevel\": \"75\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/pets/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pets",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2024 01:45:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"petName\": \"Charlie\",\n    \"petDescription\": \"Black Dragon\",\n    \"hungerLevel\": 100,\n    \"thirstLevel\": 85,\n    \"boredomLevel\": 75\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/books/800",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/books/800",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"800"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/books/800",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/books/800",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"800"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2024 22:21:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2024-03-08T22:21:03.086+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"trace\": \"org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/books/800.\\r\\n\\tat org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)\\r\\n\\tat org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:840)\\r\\n\",\n    \"message\": \"No static resource api/books/800.\",\n    \"path\": \"/api/books/800\"\n}"
+				}
+			]
+		}
+	]
 }
