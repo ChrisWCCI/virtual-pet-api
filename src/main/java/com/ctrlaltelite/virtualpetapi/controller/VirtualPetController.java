@@ -20,13 +20,14 @@ public class VirtualPetController {
 
     @Autowired
     private VirtualPetService virtualPetServ;
-    
+
     // used as a way to make sure mapping is working
     @GetMapping("/ping")
     public String pingPong() {
         return "pong";
     }
 
+    // add a new pet
     @PostMapping("/new")
     public void addUser(@RequestBody VirtualPet virtualPet) {
         this.virtualPetServ.createVirtualPet(virtualPet);
@@ -44,6 +45,7 @@ public class VirtualPetController {
         return this.virtualPetServ.getVirtualPetById(id);
     }
 
+    // this allows user to change a current pet based on id selected
     @PutMapping("/{id}")
     public VirtualPet modifyUser(@PathVariable long id, @RequestBody VirtualPet updatedVirtualPet) {
         return this.virtualPetServ.updateVirtualPet(id, updatedVirtualPet);

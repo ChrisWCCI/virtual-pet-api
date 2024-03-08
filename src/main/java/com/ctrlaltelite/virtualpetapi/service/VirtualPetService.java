@@ -17,21 +17,26 @@ public class VirtualPetService {
     private VirtualPetRepository virtualPetRepo;
 
     /*
-     * Adds a new Pet to the repository (db). The "C" (create) in CRUD
+     * Adds a new Pet to the repository (db)
      */
     public void createVirtualPet(VirtualPet virtualPetNew) {
         this.virtualPetRepo.save(virtualPetNew);
     }
 
     /*
-     * Gets all the pets in the repo (db). The "R" (read) in CRUD
+     * Gets all the pets in the repo (db)
      */
     public List<VirtualPet> getAllVirtualPets() {
         return this.virtualPetRepo.findAll();
     }
 
+    // delete a pet per selected Id
+    public void deleteVirtualPet(long id) {
+        this.virtualPetRepo.deleteById(id);
+    }
+
     /*
-     * Gets a specific Pet by its id. The "R" (read) in CRUD
+     * Gets a specific Pet by its Id
      */
     public VirtualPet getVirtualPetById(long id) {
         return this.virtualPetRepo.findById(id)
@@ -39,13 +44,13 @@ public class VirtualPetService {
     }
 
     /*
-     * Updates an existing Pet, found by a specific id. The "U" (update) in CRUD
+     * Updates an existing Pet
      */
     public VirtualPet updateVirtualPet(long id, VirtualPet updatedVirtualPet) {
         VirtualPet existingVirtualPet = this.virtualPetRepo.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pet not found: " + id));
 
-        //  Updating Pet Profile
+        // Updating Pet Profile
         existingVirtualPet.setPetName(updatedVirtualPet.getPetName());
         existingVirtualPet.setPetDescription(updatedVirtualPet.getPetDescription());
         existingVirtualPet.setHungerLevel(updatedVirtualPet.getHungerLevel());
@@ -55,7 +60,19 @@ public class VirtualPetService {
         return existingVirtualPet;
     }
 
-    public void deleteVirtualPet(long id) {
-        this.virtualPetRepo.deleteById(id);
+    /*
+     * Error for when attempting to delete a non-existent pet Id
+     */
+    public VirtualPet deleteVirtualPet(long id, VirtualPet updatedVirtualPet) {
+        VirtualPet existingVirtualPet = this.virtualPetRepo.findById(id)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pet not found: " + id));
+        // Updating Pet Profile
+        existingVirtualPet.setPetName(updatedVirtualPet.getPetName());
+        existingVirtualPet.setPetDescription(updatedVirtualPet.getPetDescription());
+        existingVirtualPet.setHungerLevel(updatedVirtualPet.getHungerLevel());
+        existingVirtualPet.setThirstLevel(updatedVirtualPet.getThirstLevel());
+        existingVirtualPet.setBoredomLevel(updatedVirtualPet.getBoredomLevel());
+        this.virtualPetRepo.save(existingVirtualPet);
+        return existingVirtualPet;
     }
 }
