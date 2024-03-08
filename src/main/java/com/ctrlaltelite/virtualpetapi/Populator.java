@@ -10,6 +10,7 @@ import com.ctrlaltelite.virtualpetapi.repository.VirtualPetRepository;
 
 @Component
 
+
 public class Populator implements CommandLineRunner {
 
         @Autowired
