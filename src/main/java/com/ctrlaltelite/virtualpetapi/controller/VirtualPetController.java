@@ -20,7 +20,7 @@ public class VirtualPetController {
 
     @Autowired
     private VirtualPetService virtualPetServ;
-    
+
     // used as a way to make sure mapping is working
     @GetMapping("/ping")
     public String pingPong() {
