@@ -47,7 +47,7 @@ public class VirtualPet {
     }
 
     public long getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(long id) {
