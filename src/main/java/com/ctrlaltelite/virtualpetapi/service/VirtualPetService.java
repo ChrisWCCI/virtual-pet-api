@@ -10,6 +10,7 @@ import org.springframework.web.server.ResponseStatusException;
 import com.ctrlaltelite.virtualpetapi.entity.VirtualPet;
 import com.ctrlaltelite.virtualpetapi.repository.VirtualPetRepository;
 
+@SuppressWarnings("null")
 @Service
 public class VirtualPetService {
 
@@ -32,6 +33,8 @@ public class VirtualPetService {
 
     // delete a pet per selected Id
     public void deleteVirtualPet(long id) {
+        this.virtualPetRepo.findById(id)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pet not found: " + id));
         this.virtualPetRepo.deleteById(id);
     }
 
@@ -50,22 +53,6 @@ public class VirtualPetService {
         VirtualPet existingVirtualPet = this.virtualPetRepo.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pet not found: " + id));
 
-        // Updating Pet Profile
-        existingVirtualPet.setPetName(updatedVirtualPet.getPetName());
-        existingVirtualPet.setPetDescription(updatedVirtualPet.getPetDescription());
-        existingVirtualPet.setHungerLevel(updatedVirtualPet.getHungerLevel());
-        existingVirtualPet.setThirstLevel(updatedVirtualPet.getThirstLevel());
-        existingVirtualPet.setBoredomLevel(updatedVirtualPet.getBoredomLevel());
-        this.virtualPetRepo.save(existingVirtualPet);
-        return existingVirtualPet;
-    }
-
-    /*
-     * Error for when attempting to delete a non-existent pet Id
-     */
-    public VirtualPet deleteVirtualPet(long id, VirtualPet updatedVirtualPet) {
-        VirtualPet existingVirtualPet = this.virtualPetRepo.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pet not found: " + id));
         // Updating Pet Profile
         existingVirtualPet.setPetName(updatedVirtualPet.getPetName());
         existingVirtualPet.setPetDescription(updatedVirtualPet.getPetDescription());
